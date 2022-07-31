@@ -1,0 +1,33 @@
+.main{
+    margin: 0 5px;
+    padding: 0px 10px;
+    color: #2B2C3E;
+    box-sizing: border-box;
+    /* z-index: 5; */
+}
+
+@media screen and (min-width: 639px){
+    .main{
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .main{
+        margin: 0 50px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .main{
+        margin: 0 70px; 
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .main{
+        margin: 0 150px; 
+    }
+
+}
