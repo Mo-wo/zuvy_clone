@@ -41,11 +41,11 @@ const Section1 = () => {
                 src={dollar2}
                 alt="dollar-coin"
               />
-              <img
+              {/* <img
                 className={styles.dollarCoin3}
                 src={dollar3}
                 alt="dollar-coin"
-              />
+              /> */}
             </div>
           </div>
         </div>
