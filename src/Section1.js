@@ -58,3 +58,5 @@ const Section1 = () => {
 };
 
 export default Section1;
+
+// https://github.com/Mo-wo/zuvy_clone.git
