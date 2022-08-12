@@ -22,7 +22,6 @@ const Section1 = () => {
                 Dreaming of a world where all customers pay up on time? <br />
                 Dream no more with Zuvy
               </p>
-              <WaitlistButton />
             </div>
           </div>
           <div className={styles.sectionImage}>
@@ -36,6 +35,8 @@ const Section1 = () => {
                 src={dollar1}
                 alt="dollar-coin"
               />
+              <WaitlistButton />
+                  
               <img
                 className={styles.dollarCoin2}
                 src={dollar2}
