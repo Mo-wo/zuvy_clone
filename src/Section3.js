@@ -28,17 +28,17 @@ const Section3 = () => {
                         </div>
                     </div>
                     {/* Text Content */}
-                    <div className={styles.captions}>
-                        {/* Text 1 */}
-                        <div className={styles.captionContainer}>
-                            {/* <div className={styles.circle}>1</div> */}
-                            <div className={styles.caption}>
-                                <div className={`${styles.text} ${styles.text1}`}>
-                                    <h3 className={styles.h3}>Create & Send Your Invoice</h3>
-                                    <p className={styles.p}>Use Zuvy to create and send invoices to<br /> your customers</p>
-                                </div>
-                            </div>
-                        </div>
+//                     <div className={styles.captions}>
+//                         {/* Text 1 */}
+//                         <div className={styles.captionContainer}>
+//                             {/* <div className={styles.circle}>1</div> */}
+//                             <div className={styles.caption}>
+//                                 <div className={`${styles.text} ${styles.text1}`}>
+//                                     <h3 className={styles.h3}>Create & Send Your Invoice</h3>
+//                                     <p className={styles.p}>Use Zuvy to create and send invoices to<br /> your customers</p>
+//                                 </div>
+//                             </div>
+//                         </div>
                         {/* Text 2 */}
                         <div className={styles.captionContainer}>
                             {/* <div className={styles.circle}>2</div> */}
@@ -62,7 +62,7 @@ const Section3 = () => {
                     </div>
                     {/* Images */}
                     <div className={styles.images}>
-                        <img className={`${styles.img} ${styles.phone1}`} src={screen1} alt="Phone Screen" />
+                        <img className={`${styles.img} ${styles.phone1}`} src={screen2} alt="Phone Screen" />
                         <img className={`${styles.img} ${styles.phone2}`} src={screen2} alt="Phone Screen" />
                         <img className={`${styles.img} ${styles.phone3}`} src={screen3} alt="Phone Screen" />
                     </div>
