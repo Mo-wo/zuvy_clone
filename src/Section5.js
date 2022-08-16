@@ -35,11 +35,11 @@ const Section5 = () => {
                     {/* Second Row Boxex */}
                     <div className={styles.box}>
                         {/* Box-3 */}
-                        <div className={`${styles.contentbox} ${styles.contentbox3}`}>
-                            <div className={`${styles.icon} ${styles.icon3}`}></div>
-                            <h3 className={styles.h3}>Flexible Payment Schedules</h3>
-                            <p className={styles.p}>Request an upfront payment for<br/>your invoice and pay us back in up<br/>to 4 weeks</p>
-                        </div>
+//                         <div className={`${styles.contentbox} ${styles.contentbox3}`}>
+//                             <div className={`${styles.icon} ${styles.icon3}`}></div>
+//                             <h3 className={styles.h3}>Flexible Payment Schedules</h3>
+//                             <p className={styles.p}>Request an upfront payment for<br/>your invoice and pay us back in up<br/>to 4 weeks</p>
+//                         </div>
                         {/* Box-4 */}
                         <div className={`${styles.contentbox} ${styles.contentbox4}`}>
                             <div className={`${styles.icon} ${styles.icon4}`}></div>
