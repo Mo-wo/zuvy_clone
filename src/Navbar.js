@@ -28,12 +28,12 @@ const Navbar = () => {
                 {/* style={{ display: (showNav ? 'flex' : 'none') }} */}
                 <div className={openNav ? navStyles.navMenu : `${navStyles.expanded_nav} ${navStyles.navMenu}`} >
                     {/* {} */}
-                    <ul className={navStyles.ul}>
-                        <li className={navStyles.li}><a href="#Home">Home</a></li>
-                        <li className={navStyles.li}><a href="#How">How It works</a></li>
-                        <li className={navStyles.li}><a href="#Features">Features</a></li>
-                        <li className={navStyles.li}><a href="#FAQs">FAQs</a></li>
-                    </ul>
+//                     <ul className={navStyles.ul}>
+//                         <li className={navStyles.li}><a href="#Home">Home</a></li>
+//                         <li className={navStyles.li}><a href="#How">How It works</a></li>
+//                         <li className={navStyles.li}><a href="#Features">Features</a></li>
+//                         <li className={navStyles.li}><a href="#FAQs">FAQs</a></li>
+//                     </ul>
                     <div className={navStyles.navLink}>
                         <span>Join the Waitlist</span>
                     </div>
