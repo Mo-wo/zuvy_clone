@@ -8,14 +8,14 @@
 // import WaitlistButton from "./Waitlist";
 
 // const Section2 = () => {
-//   return (
-//     <section className={styles.section2}>
-//       <div className={styles.container}>
-//         <div className={styles.swirls}>
-//           <img className={styles.swirl1} src={swirl1} alt="Swirl Shape" />
-//           <img className={styles.swirl2} src={swirl2} alt="Swirl Shape" />
-//           <img className={styles.swirl3} src={swirl3} alt="Swirl Shape" />
-//           <img className={styles.swirl4} src={swirl4} alt="Swirl Shape" />
+  return (
+    <section className={styles.section2}>
+      <div className={styles.container}>
+        <div className={styles.swirls}>
+          <img className={styles.swirl1} src={swirl1} alt="Swirl Shape" />
+          <img className={styles.swirl2} src={swirl2} alt="Swirl Shape" />
+          <img className={styles.swirl3} src={swirl3} alt="Swirl Shape" />
+          <img className={styles.swirl4} src={swirl4} alt="Swirl Shape" />
 //           <img className={styles.swirl5} src={swirl5} alt="Swirl Shape" />
 //         </div>
 //         <div className={styles.content}>
@@ -38,7 +38,7 @@
 //         </div>
 //       </div>
 //     </section>
-//   );
-// };
+  );
+};
 
 // export default Section2;
