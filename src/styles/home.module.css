@@ -1,10 +1,10 @@
-.main{
+/* .main{
     margin: 0 5px;
     padding: 0px 10px;
     color: #2B2C3E;
     box-sizing: border-box;
     /* z-index: 5; */
-}
+} */
 
 @media screen and (min-width: 639px){
     .main{
