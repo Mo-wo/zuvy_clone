@@ -5,15 +5,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 
-const Navbar = () => {
-    const [openNav, setOpenNav] = useState(true);
+// const Navbar = () => {
+//     const [openNav, setOpenNav] = useState(true);
 
-    const handleClick = () => {
-      setOpenNav(!openNav)
+//     const handleClick = () => {
+//       setOpenNav(!openNav)
 
-    }
+//     }
 
-    return ( 
+//     return ( 
         <nav className={navStyles.nav}>
             <div className={navStyles.navContent}>
                 <div className={navStyles.menuIcons}>
