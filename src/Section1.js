@@ -29,6 +29,7 @@ const Section1 = () => {
               <img className={styles.iPhone1} src={phone1} alt="iPhone" />
               <img className={styles.iPhone2} src={phone2} alt="iPhone" />
             </div>
+//Animations still need tweaking
             <div className={styles.coins}>
               <img
                 className={styles.dollarCoin1}
