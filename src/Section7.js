@@ -2,7 +2,7 @@ import styles from './styles/section7.module.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Button } from '@mui/material';
-
+//ConsiderMerging with Section6
 const Section7 = () => {
     return ( 
         <section className={styles.section}>
