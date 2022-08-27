@@ -16,6 +16,7 @@
           <img className={styles.swirl2} src={swirl2} alt="Swirl Shape" />
           <img className={styles.swirl3} src={swirl3} alt="Swirl Shape" />
           <img className={styles.swirl4} src={swirl4} alt="Swirl Shape" />
+            // Start tubleshooting here
 //           <img className={styles.swirl5} src={swirl5} alt="Swirl Shape" />
 //         </div>
 //         <div className={styles.content}>
