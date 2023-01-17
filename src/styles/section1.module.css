@@ -1,0 +1,571 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.landing {
+  display: flex;
+}
+.sectionContent {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionText h1 {
+  font-weight: 800;
+  color: #121755;
+  margin-bottom: 40px;
+  position: absolute;
+  top: 19%;
+  font-size: 1.6rem;
+}
+.orange {
+  color: #f5ad59;
+}
+.sectionDesc {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionText p {
+  font-weight: 400;
+  margin: 10px auto;
+  align-self: center;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.phone {
+  display: flex;
+  z-index: 1;
+}
+.sectionImage {
+  display: flex;
+  flex-direction: column;
+  margin: 360px 0 -10px -130px;
+  justify-content: center;
+  align-items: center;
+}
+.iPhone1 {
+  margin-top: -250px;
+  z-index: 1;
+  width: 350px;
+  height: 350px;
+  animation-name: phone1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes phone1 {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+.iPhone2 {
+  width: 120px;
+  height: 170px;
+  transform: skewY(0deg) rotate(-5.12deg);
+  animation-name: phone;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes phone {
+  0% {
+    transform: translate(-100%, -80%);
+  }
+  100% {
+    transform: translate(-100%, -40%);
+  }
+}
+.coins {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  perspective: 100px;
+}
+.dollarCoin1,
+.dollarCoin2,
+.dollarCoin3 {
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+.dollarCoin1 {
+  top: -40px;
+  left: 5px;
+  animation-name: coin1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes coin1 {
+  0% {
+    transform: translateY(0px) translateZ(-10px);
+  }
+  100% {
+    transform: translateY(20px) translateZ(10px);
+  }
+}
+.dollarCoin2 {
+  top: 0;
+  left: 25px;
+  transform: skewY(50deg) rotate(30deg) translate(150%, 10%);
+  animation-name: coin2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes coin2 {
+  0% {
+    transform: rotate(20deg);
+    top: -230px;
+  }
+  100% {
+    transform: rotate(-18deg);
+    top: -160px;
+  }
+}
+.dollarCoin3 {
+  right: 10px;
+  animation-name: coin3;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes coin3 {
+  0% {
+    top: -20px;
+    transform: translateZ(-15px);
+  }
+  100% {
+    top: 20px;
+    transform: translateZ(0px);
+  }
+}
+.backToTop {
+  z-index: 2;
+  position: fixed;
+  bottom: 1%;
+  right: 4%;
+}
+.backToTop p {
+  align-self: flex-end;
+  padding: 2px 15px;
+  background-color: #f5ad59;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+/* ---------------------Media Queries-------------------- */
+
+@media screen and (min-width: 280px) {
+  .sectionDesc {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .sectionDesc {
+    width: 80%;
+  }
+  .dollarCoin1 {
+    top: -30px;
+    left: 20px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateY(-40px) translateZ(-5px);
+    }
+    100% {
+      transform: translateY(20px) translateZ(10px);
+    }
+  }
+  .dollarCoin3 {
+    right: 5px;
+  }
+  @keyframes coin3 {
+    0% {
+      top: -20px;
+      transform: translateZ(-30px);
+    }
+    100% {
+      top: 30px;
+      transform: translateZ(0px);
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .sectionImage{
+    
+  }
+  .iPhone2 {
+    transform: skewY(0deg) rotate(-8.12deg) translate(10%, 20%);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .sectionText h1 {
+    font-size: 2rem;
+  }
+  .sectionDesc {
+    width: 90%;
+  }
+  .sectionText p {
+    margin: 0 0 20px -30px;
+  }
+  .sectionImage {
+    margin: 400px 0 -30px -80px;
+  }
+  .backToTop {
+  bottom: 5%;
+}
+}
+
+@media screen and (min-width: 455px) {
+  .sectionImage {
+    position: absolute;
+    height: auto;
+    top: 0%;
+  }
+  .sectionDesc {
+    width: 100%;
+    margin: 530px 0 0 20px;
+  }
+  .dollarCoin1,
+  .dollarCoin2,
+  .dollarCoin3 {
+    width: 15%;
+  }
+  .dollarCoin1 {
+    top: 0px;
+    left: 80px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateY(-40px) translateZ(-50px);
+    }
+    100% {
+      transform: translateY(20px) translateZ(0px);
+    }
+  }
+  .dollarCoin3 {
+    right: 100px;
+  }
+  @keyframes coin3 {
+    0% {
+      top: -30px;
+      transform: translateZ(-30px);
+    }
+    100% {
+      top: 30px;
+      transform: translateZ(0px);
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .sectionContent {
+    flex-direction: row;
+  }
+  .sectionText {
+    margin-top: 150px;
+    flex-direction: column;
+  }
+  .sectionText h1 {
+    top: 25%;
+  }
+  .sectionDesc {
+    margin: 0;
+  }
+  .sectionText p {
+    margin: 80px 0 30px 0;
+    text-align: start;
+  }
+  .sectionImage {
+    position: static;
+  }
+  .phone {
+    position: static;
+  }
+  .dollarCoin1,
+  .dollarCoin2,
+  .dollarCoin3 {
+    width: 20%;
+  }
+  .dollarCoin1 {
+    top: 0px;
+    left: 0px;
+  }
+  .dollarCoin3 {
+    right: 30px;
+  }
+}
+@media screen and (min-width: 564px) {
+  .dollarCoin1,
+  .dollarCoin2,
+  .dollarCoin3 {
+    width: 20%;
+  }
+  .dollarCoin3 {
+    right: 30px;
+  }
+}
+@media screen and (min-width: 595px) {
+  .sectionImage {
+    margin-left: 0;
+  }
+  .dollarCoin1,
+  .dollarCoin2,
+  .dollarCoin3 {
+    width: 25%;
+  }
+  .dollarCoin3 {
+    right: 25px;
+  }
+}
+@media screen and (min-width: 595px) {
+  .sectionDesc {
+    align-items: flex-start;
+  }
+  .sectionImage {
+    margin-left: 0;
+  }
+  .dollarCoin1,
+  .dollarCoin2,
+  .dollarCoin3 {
+    width: 18%;
+  }
+  .dollarCoin3 {
+    right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section{
+    margin-bottom: 250px;
+  }
+  .sectionImage{
+    margin: 320px 0 -30px 120px;
+
+  }
+  .dollarCoin1{
+    top: -60px;
+    left: 60px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateX(0px) translateY(-20px) translateZ(0px);
+    }
+    100% {
+      transform: translateX(0px) translateY(40px) translateZ(5px);
+    }
+  }
+  .dollarCoin2 {
+    left: 35px;
+  }
+  @keyframes coin2 {
+    0% {
+      transform: rotate(20deg);
+      top: -260px;
+    }
+    100% {
+      transform: rotate(-18deg);
+      top: -170px;
+    }
+  }
+  .dollarCoin3 {
+    right: 50px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .dollarCoin1{
+    top: -50px;
+    left: 80px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateX(0px) translateY(-20px) translateZ(-5px);
+    }
+    100% {
+      transform: translateX(0px) translateY(40px) translateZ(15px);
+    }
+  }
+}
+@media screen and (min-width: 854px) {
+  .sectionText h1 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+  }
+  .sectionText p {
+    margin-bottom: 30px;
+    line-height: 1.3rem;
+  }
+  .iPhone2 {
+    width: 130px;
+    height: 170px;
+  }
+  @keyframes phone {
+    0% {
+      transform: translate(-90%, -90%);
+    }
+    100% {
+      transform: translate(-90%, -40%);
+    }
+  }
+  .dollarCoin1{
+    left: 95px;
+  }
+  .dollarCoin2 {
+    left: 35px;
+  }
+  @keyframes coin2 {
+    0% {
+      transform: rotate(20deg);
+      top: -270px;
+    }
+    100% {
+      transform: rotate(-18deg);
+      top: -170px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .sectionText h1 {
+    font-size: 2.5rem;
+  }
+  .sectionDesc{
+    margin-top: 100px;
+  }
+  .sectionText p {
+    font-size: 1rem;
+    margin: 0px 0 40px 0;
+  }
+  .dollarCoin1{
+    left: 95px;
+  }
+  .dollarCoin2 {
+    left: 35px;
+  }
+  @keyframes coin2 {
+    0% {
+      transform: rotate(20deg);
+      top: -270px;
+    }
+    100% {
+      transform: rotate(-18deg);
+      top: -170px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* .sectionText h1{
+
+  } */
+  .sectionImage {
+    margin: 340px 0 -10px 50px;
+  }
+  .dollarCoin1 {
+    top: 20px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateX(80px) translateY(0px) translateZ(-10px);
+    }
+    100% {
+      transform: translateX(70px) translateY(40px) translateZ(10px);
+    }
+  }
+  .dollarCoin3 {
+    right: 50px;
+  }
+  @keyframes coin3 {
+    0% {
+      top: 0px;
+      transform: translateZ(-20px);
+    }
+    100% {
+      top: 50px;
+      transform: translateZ(0px);
+    }
+  }
+} 
+@media screen and (min-width: 1110px) {
+  .sectionImage {
+    margin: 320px 0 -10px 0px;
+  }
+  .iPhone1 {
+    width: 650px;
+    height: 550px;
+  }
+  @keyframes phone1 {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  .iPhone2 {
+    width: 180px;
+    height: 260px;
+  }
+  @keyframes phone {
+    0% {
+      transform: translate(-120%, -50%);
+    }
+    100% {
+      transform: translate(-120%, 0%);
+    }
+  }
+  .dollarCoin1, .dollarCoin2, .dollarCoin3 {
+    width: 20%;
+  }
+  .dollarCoin1 {
+    top: 50px;
+    margin-left: 130px;
+  }
+  @keyframes coin1 {
+    0% {
+      transform: translateX(0px) translateY(-20px) translateZ(0px);
+    }
+    100% {
+      transform: translateX(0px) translateY(30px) translateZ(10px);
+    }
+  }
+  .dollarCoin3 {
+    right: 80px;
+  }
+  @keyframes coin3 {
+    0% {
+      top: 0px;
+      transform: translateZ(-30px);
+    }
+    100% {
+      top: 130px;
+      transform: translateZ(-10px);
+    }
+  }
+} 
+

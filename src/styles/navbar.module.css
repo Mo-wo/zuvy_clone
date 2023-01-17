@@ -1,0 +1,205 @@
+.nav {
+  width: 100%;
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  padding: 20px 0;
+}
+
+.expandedNav{
+  min-height: 100vh;
+}
+.navContent {
+  width: 100%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img {
+  width: 109px;
+  height: 29px;
+  margin-right: 20px;
+}
+.imgClose {
+  display: none;
+}
+.img2 {
+  width: 109px;
+  height: 29px;
+  margin-right: 20px;
+  display: none;
+}
+.menuIcons {
+  display: flex;
+}
+.menuIcons2 {
+  z-index: 7;
+  position: absolute;
+  top:5%;
+  left: 50%;
+  margin-left: -20px;
+}
+.hamburger,
+.close {
+  background-color: #f4f5ffa4;
+  color: #3d49cfd0;
+  margin: auto;
+  padding: 2px 5px;
+  border-radius: 8px;
+  border: none;
+  transition: display, 0.2s ease-in-out;
+  width: 40px;
+  height: 40px;
+}
+.close {
+  display: none;
+}
+.navMenu {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.collapsedNav {
+  display: none;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 150%;
+
+}
+.li {
+  margin: 5px;
+  padding: 35px;
+}
+.li a {
+  color: #2b2c3e;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.76;
+  font-weight: 400;
+  transition: border-bottom, 0.2s ease-in-out;
+}
+.li a:hover {
+  color: #2b2c3e;
+  border-bottom: 3px solid #3d48cf;
+  opacity: 1;
+}
+.li a:focus {
+  color: #121755;
+  font-weight: bold;
+  border-bottom: 3px solid #3d48cf;
+  border-radius: 3px;
+}
+.navLink {
+  margin: 15px 0 0 0;
+  display: flex;
+  transition: transform, 0.5s ease-in-out;
+}
+.navLink span {
+  font-weight: bold;
+  color: #3d48cf;
+  font-size: 0.875rem;
+  background-color: #f4f5ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navLink:hover {
+  transform: scale(1.1);
+}
+
+/* ------------Media Queries-------------------- */
+@media screen and (min-width: 320px) {
+  .navContent {
+    margin: 0 25px;
+  }
+}
+@media screen and (min-width: 350px) {
+  .navContent {
+    margin: 0 35px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .nav{
+    height:12vh;
+  }
+  .navContent {
+    width: 100%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .imgClose,
+  .img {
+    display: none;
+  }
+  .img2 {
+    display: flex;
+  }
+  .menuIcons,
+  .menuIcons2 {
+    display: none;
+    z-index:1;
+  }
+  .collapsedNav {
+    display: flex;
+  }
+  .navMenu {
+    padding: 0;
+    flex-direction: row;
+    position: static;
+    width: 85%;
+    min-height: auto;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ul {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 350px;
+  }
+  .li {
+    margin: 5px;
+    padding: 5px;
+  }
+  .li a {
+    font-size: 14px;
+  }
+  .navLink {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .navContent {
+    margin: 0 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navContent {
+    margin: 0 100px;
+  }
+  .ul {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navContent {
+    margin: 0 150px;
+  }
+
+}
