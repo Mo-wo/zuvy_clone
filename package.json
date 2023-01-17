@@ -45,8 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "@types/react-router-hash-link": "^2.4.5"
+=======
+>>>>>>> b17b094bd97da98408e8e1c2be6f2b281361f059
   }
 }
