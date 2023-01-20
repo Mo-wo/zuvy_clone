@@ -55,7 +55,7 @@ export const FeaturesOutline = () => {
         </div>
       </div>
       <img
-        className={styles.ellipse3}
+        className={styles.ellipse7}
         src={ellipse7}
         alt="background-adornment"
       />
