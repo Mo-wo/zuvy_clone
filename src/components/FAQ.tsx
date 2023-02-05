@@ -34,8 +34,8 @@ export const FAQ = () => {
       <h2>Frequently Asked Questions</h2>
       <div className={styles.faqContainer}>
         {faqs.map((faq, index) => (
-          <div className={styles.accordion}>
-            <Accordion elevation={0} key={index.toString()} >
+          <div key={index.toString()} className={styles.accordion}>
+            <Accordion elevation={0}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
