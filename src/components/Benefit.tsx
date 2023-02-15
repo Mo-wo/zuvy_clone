@@ -1,26 +1,26 @@
-import styles from "./styles/section2.module.css";
-import swirl1 from "./images/swirl1.png";
-import swirl2 from "./images/swirl2.png";
-import swirl3 from "./images/swirl3.png";
-import swirl4 from "./images/swirl4.png";
-import swirl5 from "./images/swirl5.png";
-import saly from "./images/Saly-10.png";
+import styles from "../styles/benefit.module.css";
+// import swirl1 from "./images/swirl1.png";
+// import swirl2 from "./images/swirl2.png";
+// import swirl3 from "./images/swirl3.png";
+// import swirl4 from "./images/swirl4.png";
+// import swirl5 from "./images/swirl5.png";
+// import saly from "../images/";
 import WaitlistButton from "./Waitlist";
 
-const Section2 = () => {
+export const Benefit = () => {
   return (
     <section className={styles.section2}>
       <div className={styles.container}>
-        <div className={styles.swirls}>
+        {/* <div className={styles.swirls}>
           <img className={styles.swirl1} src={swirl1} alt="Swirl Shape" />
           <img className={styles.swirl2} src={swirl2} alt="Swirl Shape" />
           <img className={styles.swirl3} src={swirl3} alt="Swirl Shape" />
           <img className={styles.swirl4} src={swirl4} alt="Swirl Shape" />
             Start tubleshooting here
           <img className={styles.swirl5} src={swirl5} alt="Swirl Shape" />
-        </div>
+        </div> */}
         <div className={styles.content}>
-          <img className={styles.saly} src={saly} alt="Saly" />
+          {/* <img className={styles.saly} src={saly} alt="Saly" /> */}
           <div className={styles.text}>
             <h2 className={styles.h2}>
               We are Shortening the
@@ -42,4 +42,3 @@ const Section2 = () => {
   );
 };
 
-export default Section2;

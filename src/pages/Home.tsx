@@ -6,12 +6,14 @@ import { FAQ } from "../components/FAQ";
 import { Hero } from "../components/Hero";
 import {BackToTop} from "../components/BackToTop";
 import {JoinWaitlist} from "../components/JoinWaitlist";
+import {Benefit} from "../components/Benefit";
 
 
 const Home = () => {
   return (
     <main className={styles.main}>
       <Hero />
+      <Benefit/>
       <HowItWorks />
       <div className={styles.featuresSection}>
         <Features />

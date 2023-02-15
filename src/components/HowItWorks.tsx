@@ -12,8 +12,8 @@ export const HowItWorks = () => {
   const circle3 = useRef<HTMLDivElement>(null!);
 
   // const _circle1 = document.querySelector(".circle1")!;
-  let change = circle1.current.className.classlist.add('mowo');
-  console.log(circle1.current.className);
+  // let change = circle1.current.className.classlist.add('mowo');
+  // console.log(circle1.current.className);
 
   const circleCollection = [circle1, circle2, circle3];
   // console.log(circleCollection)
