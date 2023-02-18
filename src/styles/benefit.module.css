@@ -2,8 +2,11 @@
     margin: 150px auto;
 }
 .container{
-    
-    background-color: hsl(237, 18%, 21%);
+    background: url('../images/benefitsContainer.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: hsl(237, 18%, 21%); */
     border-radius: 20px;
     padding-bottom: 30px;
     height: 70vh;
