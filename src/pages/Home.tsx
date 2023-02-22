@@ -13,13 +13,13 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <Hero />
-      <Benefit/>
-      <HowItWorks />
+      {/* <Benefit/> */}
+      {/* <HowItWorks /> */}
       <div className={styles.featuresSection}>
-        <Features />
-        <FeaturesOutline/>
+        {/* <Features /> */}
+        {/* <FeaturesOutline/> */}
         </div>
-      <JoinWaitlist />
+      {/* <JoinWaitlist /> */}
       <FAQ />
       <div style={{ position: "fixed", bottom: "2%", right: "3%", zIndex: 4 }}>
         <BackToTop />

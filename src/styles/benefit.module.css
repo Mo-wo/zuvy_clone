@@ -5,21 +5,54 @@
     justify-content:center;
 }
 .container{
-    background: url('../images/benefitsContainer.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+   background-color: #2b2c3e;
     border-radius: 20px;
-    height: 70vh;
-    width: 90vw;
+    height: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    position: relative;
 }
+.swirlsWrapper{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.swirls{
+    width:70px;
+    height: 70px;
+    position: absolute;
+}
+.swirl1{
+    top: -19px;
+    left:-9%;
+}
+.swirl2{
+    top: -40px;
+    left: 40%;
+}
+.swirl3{
+    top: 18%;
+    right: -24px;
+    width: 60px;
+    height:60px;
+}
+.swirl4{
+    bottom: -40px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+.swirl5{
+    bottom: -34px;
+    left: 40px;
+}
+
 .content{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 100%;
 }
 .saly{
@@ -43,7 +76,7 @@
     flex-direction: column;
     justify-content: space-around;
     /* align-items: center; */
-    margin: 50px 10px;
+    margin: 10px;
     color: white;
 }
 .text h2, .text p{
@@ -68,10 +101,31 @@
         margin: 50px 20px;
     }
 }
-
 @media screen and (min-width: 425px) {
     .text{
         margin: 50px 30px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .swirl1{
+        top: -17px;
+        left:-19px;
+    }
+    .swirl2{
+        top: -37px;
+        left: 45%;
+    }
+    .swirl3{
+        top: 25%;
+        width:70px;
+        height:70px;
+    }
+    .swirl4{
+        right: -5px;
+    }
+    .swirl5{
+        bottom: -34px;
+        left: 30%;
     }
 }
 @media screen and (min-width: 700px) {
@@ -99,18 +153,70 @@
         width: 50%;
     }
 }
+@media screen and (min-width: 1024px) {
+    .swirls{
+        width: 100px;
+        height:100px;
+    }
+    .swirl1{
+        top: -28px;
+        left:-28px;
+    }
+    .swirl2{
+        top: -55px;
+        left: 45%;
+    }
+    .swirl3{
+        top: 25%;
+        right: -35px;
+    }
+    .swirl4{
+        bottom: -48px;
+        right: -5px;
+        width:120px;
+        height:120px;
+    }
+    .swirl5{
+        bottom: -47px;
+        left: 35%;
+    }
+}
 @media screen and (min-width: 1200px) {
     .container{
-        background-size: cover;
-        width: 100%;
-        height: 80vh;
-        border: 1px solid red;
-        padding: 30px;
+        height: 75vh;
+        padding: 0 30px;
     }
     .saly{
-        width: 45%;
+        width: 40%;
+    }
+    @keyframes saly {
+        0% {transform: translateY(-50px);}
+        100%{transform: translateY(-25px);}
     }
     .text {
         width: 50%;
+        height: 340px;
+    }
+    .text h2{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom:0;
+    }
+    .text p{
+        margin-right: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1300px){
+    .content{
+        justify-content: space-between;
+        width: 90%;
+    }
+    .saly{
+        width: 38%;
+    }
+    @keyframes saly {
+        0% {transform: translateY(-60px);}
+        100%{transform: translateY(-45px);}
     }
 }
