@@ -20,8 +20,8 @@ const Home = () => {
         {/* <FeaturesOutline/> */}
         </div>
       {/* <JoinWaitlist /> */}
-      <FAQ />
-      <div style={{ position: "fixed", bottom: "2%", right: "3%", zIndex: 4 }}>
+      {/* <FAQ /> */}
+      <div style={{ position: "fixed", bottom: "2%", right: "3%", zIndex: 4, borderWidth:1 }}>
         <BackToTop />
       </div>
     </main>

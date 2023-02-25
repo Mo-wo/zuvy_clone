@@ -9,7 +9,7 @@ const MainLayout = () => {
     <ScrollToTop>
       <Navbar />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </ScrollToTop>
   );
 };
