@@ -11,11 +11,12 @@ import WaitlistButton from "./Waitlist";
 export const Hero = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.landing}>
-        <div className={styles.rectWrapper}>
+       <div className={styles.rectWrapper}>
           <img className={styles.rect1} src={rect1} alt="background-designs" />
           <img className={styles.rect2} src={rect2} alt="background-designs" />
         </div>
+      {/* <div className={styles.landing}> */}
+       
         <div className={styles.sectionContent}>
           <div className={styles.sectionText}>
             <h1>
@@ -57,7 +58,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
