@@ -11,9 +11,10 @@ import {Benefit} from "../components/Benefit";
 
 const Home = () => {
   return (
+    <>
+    <Hero />
     <main className={styles.main}>
-      <Hero />
-      {/* <Benefit/> */}
+      <Benefit/>
       {/* <HowItWorks /> */}
       <div className={styles.featuresSection}>
         {/* <Features /> */}
@@ -25,6 +26,7 @@ const Home = () => {
         <BackToTop />
       </div>
     </main>
+    </>
   );
 };
 

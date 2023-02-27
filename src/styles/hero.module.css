@@ -3,57 +3,51 @@
   flex-direction: column;
   width: 100%;
   min-height:100vh;
-  
+  position: relative;
 }
 .landing {
   display: flex;
-  /* position: relative; */
 }
 .rectWrapper{
   position: relative;
-  right: -10%; 
-  top: 150px;
+  top: 190px;
   overflow: hidden;
-  border: 1px solid green;
   width: 100%;
-  height: 70vh;
+  height: 95vh;
 }
 .rect1{
   position: absolute;
   right: 0;
-  /* transform: translateY(-330px) translateX(60px); */
-
 }
 .rect2{
   position: absolute;
   right:0;
-  /* transform: translateY(-330px) translateX(200px); */
+  top: 140px;
 }
 .sectionContent {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  position: absolute;
+  justify-content: flex-start;
   z-index: 1;
   width:100%;
-  border: 1px solid green;
+  height: 25vh;
+  /* border: 1px solid red; */
+  margin-top: -180px;
 }
 .sectionText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 .sectionText h1 {
   text-align: center;
   font-weight: 800;
   color: #121755;
-  margin-bottom: 40px;
   position: absolute;
   top: 15%;
   font-size: 1.9rem;
-  border: 1px solid purple;
 
 }
 .orange {
@@ -85,12 +79,12 @@
 .sectionImage {
   display: flex;
   flex-direction: column;
-  transform: translateY(210px);
+  transform: translateY(-40px);
   align-self: center;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
 }
 .iPhone1 {
   margin-top: -250px;
@@ -206,7 +200,7 @@
 
 /* ---------------------Media Queries-------------------- */
 
-/* @media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .dollarCoin1 {
     top: -30px;
     left: 20px;
@@ -234,12 +228,6 @@
   }
 }
 @media screen and (min-width: 375px) {
-  .rect1{
-    transform: translateY(0) translateX(40px);
-  }
-  .rect2{
-    transform: translateY(-360px) translateX(150px);
-  }
   .iPhone2 {
     transform: skewY(0deg) rotate(-8.12deg) translate(10%, 20%);
   }
@@ -291,13 +279,7 @@
   }
 }
 @media screen and (min-width: 500px) {
-  .rect1{
-    transform: translateY(0) translateX(90px);
-  }
-  .rect2{
-    transform: translateY(-360px) translateX(200px);
-  }
-  .sectionImage{
+   .sectionImage{
     transform: translateY(190px);
     height: 80vh;
   }
@@ -326,7 +308,7 @@
 }
 .dollarCoin3 {
   right: 10px;
-  /* top: 80px; 
+  /* top: 80px;  */
 }
 @keyframes coin1 {
   0% {
@@ -357,23 +339,20 @@
   }
 }
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
+  .rectWrapper{
+    top:100px;
+  }
   .rect1{
-    transform: translateY(60px) translateX(170px);
+    right: -150px;
   }
   .rect2{
-    transform: translateY(-310px) translateX(290px);
-  }
-}
-@media screen and (min-width: 800px) {
-  .rectWrapper{
-    transform: translateY(-10px) translateX(60px);
+    top: 140px;
+    right: -150px;
+
   }
 }
 @media screen and (min-width: 854px) {
-  .rectWrapper{
-    transform: translateY(-10px) translateX(80px);
-  }
   .sectionText h1 {
     font-size: 2.3rem;
     margin-bottom: 30px;
@@ -394,11 +373,11 @@
   .sectionContent {
     flex-direction: row;
     justify-content: center;
-    /* align-self: center; 
+    /* align-self: center; */
   }
   .sectionText {
     width: 400px;
-    /* margin-top: 65px; 
+    /* margin-top: 65px; */
     align-items: flex-start;
   }
   .sectionText h1 {
@@ -418,7 +397,7 @@
     align-self: flex-start;
     margin:0;
   }
-  /* .sectionImage {
+   .sectionImage {
     position: static;
   }
   .phone {
@@ -426,9 +405,6 @@
   } 
 }
 @media screen and (min-width: 980px) {
-  .rectWrapper{
-    transform: translateY(10px) translateX(170px);
-  }
   .sectionText h1 {
     font-size: 2.5rem;
   }
@@ -458,12 +434,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .rectWrapper{
-    transform: translateY(10px) translateX(220px);
-  }
-  /* .sectionText h1{
-
-  } 
   .sectionImage {
     margin: 340px 0 -10px 50px;
   }
@@ -493,9 +463,6 @@
   }
 } 
 @media screen and (min-width: 1110px) {
-  .rectWrapper{
-    transform: translateY(10px) translateX(270px);
-  }
   .sectionImage {
     margin: 320px 0 -10px 0px;
   }
@@ -551,53 +518,28 @@
       transform: translateZ(-10px);
     }
   }
-} 
-@media screen and (min-width: 1180px) {
-  .rectWrapper{
-    transform: translateY(10px) translateX(320px);
-  }
 }
 @media screen and (min-width: 1240px) {
   .rectWrapper{
-    transform: translateY(50px) translateX(350px);
-  }
-}
-@media screen and (min-width: 1300px) {
-  .section {
-    min-height: 100vh;
-  }
-  .rectWrapper{
-    transform: translateY(70px) translateX(450px);
+    top:100px;
   }
   .rect1{
-    transform: translateY(48px) translateX(110px);
-    border: 1px solid firebrick;
-
+    right: -120px;
   }
   .rect2{
-    transform: translateY(-340px) translateX(260px);
+    top: 140px;
+    right: -120px;
   }
 }
-@media screen and (min-width: 1428px) {
+@media screen and (min-width: 1440px) {
   .rectWrapper{
-    transform: translateY(48px) translateX(500px);
+    top:100px;
   }
   .rect1{
-    transform: translateY(60px) translateX(110px);
-
+    right: -50px;
   }
   .rect2{
-    transform: translateY(-330px) translateX(260px);
+    top: 140px;
+    right: -50px;
   }
 }
-@media screen and (min-width: 1500px) {
-  .rectWrapper{
-    transform: translateY(68px) translateX(525px);
-  }
-  .rect1{
-    transform: translateY(60px) translateX(110px);
-  }
-  .rect2{
-    transform: translateY(-330px) translateX(260px);
-  }
-} */
